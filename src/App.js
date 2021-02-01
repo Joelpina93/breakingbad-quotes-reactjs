@@ -35,7 +35,7 @@ function App() {
     const [quote, saveQuote] = useState({});
     const consultApi = async () => {
         const response = await fetch(
-            'http://breaking-bad-quotes.herokuapp.com/v1/quotes'
+            'https://breaking-bad-quotes.herokuapp.com/v1/quotes'
         );
         const quote = await response.json();
         saveQuote(quote[0]);
